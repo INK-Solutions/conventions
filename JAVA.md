@@ -29,3 +29,9 @@
 2. All incoming dto fields are having validations and dto’s are marked with @Valid
 3. If there is a dto that has success flag, there are two factory methods: success/error and dto takes care of creating itself
 4. If we have a controller that accepts dto as a request and produces dto as a response, than request dto should be named: `RequestDto` , response dto: `ResponseDto` and service method that is handling the request should have a method `ResponseDto handle(*RequestDto request)` .
+
+
+**Exceptions**
+
+1. There should be no try-catch without logging exception. 
+2. The only propper way to log exception is: org.apache.commons.lang3.exception.ExceptionUtils.getStackTrace(e), we should never use e.getMessage() - in most of the cases returns an extremely useless description.
