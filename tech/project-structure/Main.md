@@ -99,6 +99,7 @@ Service package inside looks like this:
 ![service-internal.png](service-internal.png)
 
 Service layer is a heart of any application. It's core purpose is to connect all external inputs (controller and infrastructure) and perform the necessary business logic.
+It's also the only layer that has access to dao layer.
 
 
 Packages contain:
