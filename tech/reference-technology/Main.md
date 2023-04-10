@@ -12,7 +12,7 @@ Besides we would like to open the project written by any of our colleagues and '
 
 By default, we're using: 
 
-* Java 11
+* Latest Java possible (minimum 11, later if project allows)
 * Lombok - for generating boilerplate code
 * Gradle - for building projects and executing tasks
 * Spring Core - dependency injection 
