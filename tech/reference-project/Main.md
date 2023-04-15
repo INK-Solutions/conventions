@@ -7,9 +7,28 @@ We want to use our mental energy on solving project-specific problems, rather th
 
 Besides we would like to open the project written by any of our colleagues and 'feel like home'. Read it: "as little surprises as possible". We don't want to familiarise ourselves with 'yet another project specifics', we want to agree on the best conventions one time and use them over and over.   
 
-### Link 
+### How to run the project
 
 You can download the reference project from [here](https://github.com/INK-Solutions/reference-project.git).
+
+Then perform `clean build` in gradle. If you want to run the project locally adjust the profile to `local` and adjust your database config in `application-local.propertes`.
+
+### Creating projects from reference project
+
+It is expected that all new projects are created from reference project. Let's say that the new project that we are creating is named `murex-reporting` (you need to replace it with your project name). Here's a step-by-step guide on how to do it:
+
+1. `git clone https://github.com/INK-Solutions/reference-project.git murex-reporting`
+2. `cd murex-reporting`
+3. `git remote remove origin`
+4. `git remote add origin <origin url in gitlab>`
+5. Do a first push via intellij idea: (ctrl + shift + K / command + shift + K)
+
+Now let's adjust a couple of things that are reference-project specific: 
+
+1. Rename core packages under: `java`, `test/java`, `resources` from `tech.example` to `ink.solutions.murex.reporting` (adjusting it under `java` folder with Intellij Idea would auto-change in other places).
+2. In `settings.gradle` adjust `rootProject.name` to `murex-reporting`.
+
+Then, you would need to gradually replace reference project code with your business logic code. By the time of deploying the project to any env. make sure that there's no reference-project code.
 
 ### What is a reference project?
 
@@ -167,3 +186,7 @@ As you see it listens to kafka events (avro), maps them to business events and d
 Note that the reference project has an `ArchitectureTest` (defines the rules of package dependencies) and `DefaultSystemTest` (system-tests the entire system).
 
 You can read more about our testing strategy [here](../approach-to-testing/Main.md).
+
+## Other notes
+
+Note that this project is storing avro-schemas inside the project, which is a shortcut. Normally avro schemas would be stored in a separate project and would be added as a library dependency.
