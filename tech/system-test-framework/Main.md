@@ -9,8 +9,14 @@ Besides we would like to open the project written by any of our colleagues and '
 
 ### What is the System Test Framework?
 
-The System Test Framework is our custom a Java-based testing framework used for testing REST APIs, and Kafka-based messaging systems integrations. It provides tools for making HTTP requests, handling responses, and validating results, as well as built-in support for common testing practices specific to Kafka, such as producing and consuming Kafka messages, and verifying message processing. The framework helps to create comprehensive and robust system-level tests to verify the functionality, and reliability of REST APIs, integrations, and Kafka-based messaging systems, improving overall system quality.
-It is expected that all new projects use the System Test Framework, to test business logic and integration between services.
+The System Test Framework is our custom a Java-based testing framework that allows to:
+
+1. Launch all the infrastructure that your application needs (postgres db, kafka)
+2. Launch your application as a spring boot application connected to the infrastructure from step 1.
+3. Execute step-by-step requests to your application via publicly exposed interfaces (rest and kafka), checking the correctness of the result.
+4. Gracefully shut down the application and all infrastructure created for it.
+
+It is expected that all new projects use the System Test Framework, to test business logic.
 
 [System Test Framework codebase](https://github.com/INK-Solutions/system-test-framework)
 
