@@ -7,6 +7,8 @@ We want to use our mental energy on solving project-specific problems, rather th
 
 Besides we would like to open the project written by any of our colleagues and 'feel like home'. Read it: "as little surprises as possible". We don't want to familiarise ourselves with 'yet another project specifics', we want to agree on the best conventions one time and use them over and over.   
 
+### Motivation
+
 ### Example implementation
 
 You can see example implementation of the System Test Framework in our reference project.
@@ -39,5 +41,12 @@ It is expected that all new projects use the System Test Framework, to test busi
 #### Test steps
 Test steps are created with RequestStep class.
 ![steps.png](steps.png)
+
+RequestStep builder take step's name as a parameter - this is a name of a directory in test resources which contains `request` and `response` subdirs.
+`request` directory is a dir where you define your request. It supports two request types, REST and Kafka:
+- `rest-request.json` is recognized as REST request
+- `kafka-request.json` is recognized as Kafka request
+`response` directory contains expected responses from the step's execution.
+![test-resources-steps.png](test-resources-steps.png)
 
 
