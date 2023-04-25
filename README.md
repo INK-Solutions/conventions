@@ -18,9 +18,11 @@ Besides we would like to open the project written by any of our colleagues and '
 Read this specification in the following order:
 
 * [Values](Values.md)
+* [IDE](/tech/ide/Main.md)
 * [Reference technology](/tech/reference-technology/Main.md)
 * [Project structure](/tech/project-structure/Main.md)
 * [Approach to testing](/tech/approach-to-testing/Main.md)
+* [Design patterns](/tech/design-patterns/Main.md)
 * [Protecting the codebase](/tech/protecting-the-codebase/Main.md)
 * [Rest endpoint conventions](/tech/rest-endpoints-conventions/Main.md) 
 
