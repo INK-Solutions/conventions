@@ -18,6 +18,7 @@ Besides we would like to open the project written by any of our colleagues and '
 Read this specification in the following order:
 
 * [Values](Values.md)
+* [General Policies](/general/General.md)
 * [IDE](/tech/ide/Main.md)
 * [Reference technology](/tech/reference-technology/Main.md)
 * [Project structure](/tech/project-structure/Main.md)
