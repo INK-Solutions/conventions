@@ -3,7 +3,7 @@
 
 ### What is this project about?
 
-This project is a set of best practices and conventions that we as Java Excellence Center are following. 
+This project is a set of best practices and conventions that we at INK Solutions are following. 
 
 ### Why do we need conventions?
 
@@ -30,4 +30,3 @@ Read this specification in the following order:
 
 After that read [reference project](/tech/reference-project/Main.md) specification that showcases all these principles. 
 Install it locally and make sure to play around with the project and experiment until everything in it becomes clear.  
-
