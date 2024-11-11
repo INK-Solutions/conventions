@@ -13,7 +13,7 @@ The performance of every employee in the organisation would be evaluated against
 * Speed of implementing the solution
 * General problem solving skills
 * Staying up to date with overall technological trends
-* Solid understanding of the financial domain
+* Solid understanding of the business domain
 
 **Autonomy & reliability** are personal traits defined by:
 
